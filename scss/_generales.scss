@@ -1,0 +1,52 @@
+@if $modo == skynet {
+    body {
+        background-color: #73a5b6;
+    }
+    .card {
+        color: $pp_text;
+        .card-title {
+            color: navy;
+        }
+        .butt {
+            transition: all 1s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+       
+    }
+}
+
+// each
+@each $var in red, blue, violet, lightblue {
+    .#{$var} {
+        color: $var;
+    }
+}
+
+// maps
+$redes: (
+    facebook: #3131e6,
+    twitter: #4cc8f1,
+    instagram: #c52be4,
+    youtube: #dd2d2d
+);
+
+@each $red, $color in $redes {
+      .btn--#{$red} &:hover {
+         color: $color;
+     }
+}
+
+// extend
+.img-productos {
+    transition: all 2s ease;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+.card-img-top {
+    @extend .img-productos; 
+}
+
+// mixins
