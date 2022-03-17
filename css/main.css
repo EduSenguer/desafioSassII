@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 .footer {
   display: flex;
   justify-content: space-around;
@@ -29,7 +30,7 @@
     color: #0083af; }
 
 body {
-  background-color: #73a5b6; }
+  background-color: #e9e9e9; }
 
 .card {
   color: #7a00df; }
@@ -86,3 +87,17 @@ body {
         font-size: 1.5rem; }
       .social ul li:hover {
         transform: scale(1.4); }
+
+.text-about {
+  font-family: 'Cinzel', serif;
+  color: #000000; }
+
+@media screen and (max-width: 576px) {
+  .card {
+    color: magenta; }
+    .card .card-title {
+      color: slateblue; }
+    .card .card-img-top {
+      transition: all 3s ease; }
+      .card .card-img-top:hover {
+        transform: rotate(5deg); } }
