@@ -92,6 +92,14 @@ body {
   font-family: 'Cinzel', serif;
   color: #000000; }
 
+.linksdown {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .linksdown .linkdown {
+    font-family: 'Teko', sans-serif;
+    color: #778899; }
+
 @media screen and (max-width: 576px) {
   .card {
     color: magenta; }
